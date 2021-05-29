@@ -13,3 +13,10 @@ export const removeFromCardList = (payload) => {
         payload
     }
 }
+
+export const removeFromStatusList = (payload) => {
+    return {
+        type: 'REMOVE_FROM_STATUS_LIST',
+        payload
+    }
+}

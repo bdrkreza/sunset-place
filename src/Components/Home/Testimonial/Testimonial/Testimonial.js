@@ -1,8 +1,12 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import TestimonialCard from '../TestimonialCard/TestimonialCard';
 import './Testimonial.css'
 
 const Testimonial = () => {
+    const data = useSelector((state) => {
+        return state.status.statusList;
+    })
     return (
         <div>
             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -13,7 +17,9 @@ const Testimonial = () => {
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="10000">
-                        <TestimonialCard />
+                        {
+                            data.map(data => <TestimonialCard data={data} />)
+                        }
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
