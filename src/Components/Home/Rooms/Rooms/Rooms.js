@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
 import RoomCard from '../RoomCard/RoomCard';
 import './Rooms.css'
