@@ -11,7 +11,7 @@ const Navbar = () => {
                 <div class="nav-header">
                     <div class="nav-title">
                         <img src={logo} alt="" />
-                      Sunset-Place
+                      Sunset-Palace
                     </div>
                 </div>
                 <div class="nav-btn">
