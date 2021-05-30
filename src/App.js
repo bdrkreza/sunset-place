@@ -6,8 +6,11 @@ import {
   Route
 } from "react-router-dom";
 import About from "./Components/About/About";
+import Checkout from "./Components/CheckOut/CheckOut";
+// import AddressForm from "./Components/CheckOut/AddressForm";
+// import AddressForm from "./Components/CheckOut/AddressForm/AddressForm";
 import Contact from "./Components/Contact/Contact";
-import Footer from "./Components/Footer/Footer";
+// import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Header/Navbar/Navbar";
 import Home from "./Components/Home/Home/Home";
 import Rooms from "./Components/Home/Rooms/Rooms/Rooms";
@@ -29,6 +32,7 @@ function App() {
           <Route path="/contact" component={Contact} />
           <Route path="/login" component={Login} />
           <Route path="/signup" component={SignUp} />
+          <Route path="/checkout" component={Checkout} />
           <Route path="*" component={NoMatch} />
         </Switch>
       </Router>

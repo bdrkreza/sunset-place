@@ -15,7 +15,7 @@ const Footer = () => {
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-lg-4 col-md-6  col-12">
-                                            <h3>Useful links</h3>
+                                            <h3>More About Us</h3>
                                             <ul class="text-capitalize">
                                                 <li><a href="#">Home</a></li>
                                                 <li><a href="#">About</a></li>
@@ -35,6 +35,7 @@ const Footer = () => {
                                         </div>
                                         <div class="col-lg-4 col-md-6 col-12 form">
                                             <h3>News letter</h3>
+                                            <p>Subscribe to get the latest newsletters every month</p>
                                             <form>
                                                 <input type="email" placeholder="Email" />
                                                 <input type="submit" />

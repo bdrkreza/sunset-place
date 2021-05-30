@@ -2,6 +2,7 @@ import React from 'react';
 import './RoomCard.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 const RoomCard = ({ data }) => {
     console.log(data)
     const { img, size, day, room, price } = data;
@@ -24,7 +25,7 @@ const RoomCard = ({ data }) => {
                 </div>
                 <h1>£{price}</h1>
                 {/* <button className='btn bg-dark-gray border'>Explore</button> */}
-                <button className="Explore-btn"><span>AddToCard</span></button>
+                <Link to="/checkout"><button className="Explore-btn"><span>Book Now</span></button></Link>
             </div>
         </>
     );
