@@ -17,7 +17,6 @@ const Testimonial = () => {
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="10000">
-<<<<<<< HEAD
                         <TestimonialCard></TestimonialCard>
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
@@ -26,11 +25,6 @@ const Testimonial = () => {
 
                     <div class="carousel-item">
                         <TestimonialCard></TestimonialCard>
-=======
-                        {
-                            data.map(data => <TestimonialCard data={data} />)
-                        }
->>>>>>> 5e3372e52473f79b6e8aea77ebbfc4023248d438
                     </div>
                 </div>
 
