@@ -1,4 +1,5 @@
 import React from 'react';
+import './RoomCard.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 const RoomCard = ({ data }) => {
@@ -22,7 +23,8 @@ const RoomCard = ({ data }) => {
                     <p>{day}</p>
                 </div>
                 <h1>£{price}</h1>
-                <button className='btn bg-dark-gray border'>Explore</button>
+                {/* <button className='btn bg-dark-gray border'>Explore</button> */}
+                <button className="Explore-btn"><span>AddToCard</span></button>
             </div>
         </>
     );
